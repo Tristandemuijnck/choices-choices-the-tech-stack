@@ -1,14 +1,30 @@
 {
-  "name": "choices-choices-the-tech-stack",
-  "version": "1.0.0",
-  "description": "> _Fork_ deze leertaak en ga aan de slag.  Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken.  De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/choices-choices-the-tech-stack/blob/main/docs/INSTRUCTIONS.md)",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "choices-choices-the-tech-stack",
+    "version": "1.0.0",
+    "description": "> _Fork_ deze leertaak en ga aan de slag.  Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken.  De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/choices-choices-the-tech-stack/blob/main/docs/INSTRUCTIONS.md)",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "create-snapshot": "npx directus schema snapshot ./snapshots/\"$(date \"+%F\")\"-snapshot-\"$(date \"+%s\")\".yaml",
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "astro": "^3.3.1",
+        "postcss-html": "^1.5.0",
+        "prettier": "^3.0.3",
+        "prettier-plugin-astro": "^0.12.0",
+        "stylelint-config-html": "^1.1.0"
+    },
+    "devDependencies": {
+        "stylelint": "^15.11.0",
+        "stylelint-config-standard": "^34.0.0"
+    }
 }
