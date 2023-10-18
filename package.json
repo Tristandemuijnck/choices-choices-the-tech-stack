@@ -17,14 +17,20 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@astrojs/svelte": "^4.0.3",
+        "@directus/sdk": "^12.0.1",
         "astro": "^3.3.1",
+        "directus": "^10.6.3",
+        "dotenv": "^16.3.1",
         "postcss-html": "^1.5.0",
         "prettier": "^3.0.3",
         "prettier-plugin-astro": "^0.12.0",
-        "stylelint-config-html": "^1.1.0"
+        "stylelint-config-html": "^1.1.0",
+        "svelte": "^4.2.1"
     },
     "devDependencies": {
         "stylelint": "^15.11.0",
         "stylelint-config-standard": "^34.0.0"
-    }
+    },
+    "type": "module"
 }
