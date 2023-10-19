@@ -1,0 +1,66 @@
+/* -------------------------------------------------------------------------- */
+/*                               Root variables                               */
+/* -------------------------------------------------------------------------- */
+:root {
+	--color-hva-blue: #351eb6;
+	--color-hva-navy: #1e1649;
+	--color-hva-pink: #f25379;
+	--color-hva-green: #02857d;
+	--color-white: #ffffff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Reset classes                               */
+/* -------------------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+	outline: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Font imports                                */
+/* -------------------------------------------------------------------------- */
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../../src/fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans Italic';
+	src: url('../../src/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf');
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 General CSS                                */
+/* -------------------------------------------------------------------------- */
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+	background-color: var(--color-hva-blue);
+	font-family: 'Open Sans', sans-serif;
+	color: var(--color-white);
+	height: 100%;
+}
+
+a {
+	color: var(--color-white);
+}
