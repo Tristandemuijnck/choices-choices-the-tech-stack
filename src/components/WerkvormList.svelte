@@ -1,21 +1,14 @@
 <script>
-    const data = fetch('http://localhost:8055/items/Werkvorm')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-        })
-        .catch(error => {
-            console.error(error)
-        })
+    export let werkvormData
 
-    console.log(data)
-
+    console.log(werkvormData)
 </script>
 
 <ul>
-    <!-- {#each werkvormen as werkvorm}
+    {#each werkvormData.data as werkvorm}
     <li>
-        <h3>{werkvorm.title}</h3>
+        <h3>{werkvorm.id}</h3>
+        <h3>{werkvorm.Titel}</h3>
     </li>
-    {/each} -->
+    {/each}
 </ul>

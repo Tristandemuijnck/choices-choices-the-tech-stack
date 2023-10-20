@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import WerkvormList from '../components/WerkvormList.svelte'
+
+const werkvormReq = await fetch('http://localhost:8055/items/Werkvorm')
+const data = await werkvormReq.json()
 ---
 
 <BaseLayout title="Werkvormen">
-	<WerkvormList />
+	<WerkvormList werkvormData={data}/>
 </BaseLayout>
