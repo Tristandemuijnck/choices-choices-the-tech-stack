@@ -38,12 +38,12 @@ textarea:focus-visible {
 /* -------------------------------------------------------------------------- */
 @font-face {
 	font-family: 'Open Sans';
-	src: url('../../src/fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+	src: url('/fonts/OpenSans-VariableFont_wdth\,wght.ttf');
 }
 
 @font-face {
 	font-family: 'Open Sans Italic';
-	src: url('../../src/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf');
+	src: url('/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf');
 }
 
 /* -------------------------------------------------------------------------- */

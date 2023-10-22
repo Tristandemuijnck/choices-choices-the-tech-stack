@@ -1,7 +1,7 @@
 <script>
     export let werkvormData
 
-    console.log(werkvormData)
+    // console.log(werkvormData)
 </script>
 
 <ul>
